@@ -11,7 +11,7 @@ Obtf.flyable = "[flyable, nocombat]"
 Obtf:RegisterEvent("ZONE_CHANGED")
 
 function Obtf:OnEvent()
-  local delay = 2
+  local delay = 1
   C_Timer.After(delay, Obtf.CheckZone)
 end
 
