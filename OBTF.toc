@@ -1,5 +1,5 @@
 ## Interface: 30401
-## Version: 1.0.0
+## Version: 1.0.1
 ## Title: One Button Travel Form
 ## Notes: One Button Travel Form (OBTF) will pick the correct travel form based on zone, combat status, and location
 ## Author: Ironlenny

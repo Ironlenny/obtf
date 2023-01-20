@@ -46,7 +46,7 @@ function Obtf:Init()
 end
 
 -- Event handler
-function Obtf:OnEvent(isLogin, isReload)
+function Obtf:OnEvent(event, isLogin, isReload)
   local delay = 1
   if isLogin or isReload then
     Obtf:Init() -- Must use Obtf instead of self, as self is not passed into callbacks.
