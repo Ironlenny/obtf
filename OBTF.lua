@@ -1,5 +1,5 @@
 Obtf = CreateFrame("Frame")
-Obtf.blacklist = {"Dalaran"}
+Obtf.blacklist = {"Dalaran", "Magus Commerce Exchange", "Runeweaver Square", "The Eventide", "The Violet Citadel", "Antonidas Memorial", "Violet Hold", "Sunreaver's Sanctuary"}
 Obtf.outdoors_nofly = "[outdoors, noflyable]"
 Obtf.outdoors = "[outdoors]"
 Obtf.swimming = "[swimming]"
@@ -58,13 +58,13 @@ end
 -- Check what's the player's subzone and call the approriate macro update function.
 function Obtf:CheckZone()
   local zone = GetSubZoneText()
-  for i= 1, 1 do
+  for i= 1, table.getn(Obtf.blacklist) do
     if zone == Obtf.blacklist[i] then
       Obtf:UpdateNoFlyMacro()
-    else
-      Obtf:UpdateFlyingMacro()
+      return
     end
   end
+  Obtf:UpdateFlyingMacro()
 end
 
 function Obtf:UpdateFlyingMacro()
