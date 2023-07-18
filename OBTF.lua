@@ -1,5 +1,5 @@
 Obtf = CreateFrame("Frame")
-Obtf.blacklist = {"Dalaran", "Magus Commerce Exchange", "Runeweaver Square", "The Eventide", "The Violet Citadel", "Antonidas Memorial", "Violet Hold", "Sunreaver's Sanctuary"}
+Obtf.blacklist = {"Dalaran", "Magus Commerce Exchange", "Runeweaver Square", "The Eventide", "The Violet Citadel", "Antonidas Memorial", "The Violet Hold", "Sunreaver's Sanctuary"}
 Obtf.outdoors_nofly = "[outdoors, noflyable]"
 Obtf.outdoors = "[outdoors]"
 Obtf.swimming = "[swimming]"
